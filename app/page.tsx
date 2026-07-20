@@ -25,12 +25,7 @@ export default function Home() {
   return (
     <main>
       <section className="hero" id="inicio">
-        <img
-          className="hero-image"
-          src="/hero-razen.png"
-          alt=""
-          aria-hidden="true"
-        />
+        <div className="hero-image" aria-hidden="true" />
         <header className="header shell">
           <a href="#inicio" className="brand" aria-label="Razen, inicio">
             <img src="/razen-logo.svg" alt="RAZEN" />
