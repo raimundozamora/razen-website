@@ -1,30 +1,22 @@
-const divisions = [
-  {
-    id: "01",
-    name: "RAZEN CORP",
-    copy: "Producción técnica para eventos",
-    href: "#corp",
-  },
-  {
-    id: "02",
-    name: "RAZEN STAGE",
-    copy: "Audio, iluminación y touring",
-    href: "#stage",
-  },
-  {
-    id: "03",
-    name: "RAZEN RENTAL",
-    copy: "Rental B2B de equipamiento",
-    href: "#rental",
-  },
-];
-
 const Arrow = () => <span aria-hidden="true" className="arrow">→</span>;
 
 export default function Home() {
   return (
     <main>
       <section className="hero" id="inicio">
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/hero-razen.png"
+          aria-hidden="true"
+        >
+          <source src="/razen-hero-ai-v1.mp4" type="video/mp4" />
+        </video>
+
         <header className="header shell">
           <a href="#inicio" className="brand" aria-label="Razen, inicio">
             <img src="/razen-logo.svg" alt="RAZEN" />
@@ -39,27 +31,10 @@ export default function Home() {
         </header>
 
         <div className="hero-content shell">
-          <p className="eyebrow">Audiovisual technology · Chile</p>
           <h1>Technology behind<br />every performance.</h1>
           <p className="hero-copy">
             Producción técnica, touring y rental audiovisual profesional.
           </p>
-          <a className="outline-button" href="#divisiones">
-            Explorar Razen <Arrow />
-          </a>
-        </div>
-
-        <div className="division-rail shell" id="divisiones">
-          {divisions.map((division) => (
-            <a className="division-card" href={division.href} key={division.id}>
-              <span className="division-index">{division.id}</span>
-              <span>
-                <strong>{division.name}</strong>
-                <small>{division.copy}</small>
-              </span>
-              <Arrow />
-            </a>
-          ))}
         </div>
       </section>
 
