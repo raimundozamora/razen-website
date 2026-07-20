@@ -22,9 +22,9 @@ export default function Home() {
             <img src="/razen-logo.svg" alt="RAZEN" />
           </a>
           <nav aria-label="Navegación principal">
-            <a href="#corp">Corp</a>
-            <a href="#stage">Stage</a>
-            <a href="#rental">Rental</a>
+            <a href="/corp">Corp</a>
+            <a href="/stage">Stage</a>
+            <a href="/rental">Rental</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
           </nav>
@@ -38,75 +38,49 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="intro shell">
-        <p className="section-label">RAZEN</p>
-        <div>
-          <h2>Equipamiento, conocimiento y precisión técnica.</h2>
+      <section className="businesses" id="divisiones">
+        <div className="businesses-intro shell">
+          <p className="section-label">NUESTRAS ÁREAS</p>
+          <h2>Tres negocios.<br />Un mismo estándar.</h2>
           <p>
-            Somos una compañía de tecnología audiovisual. Entregamos soluciones
-            especializadas para marcas, artistas y empresas de producción, con
-            equipos preparados para responder donde cada detalle importa.
+            Soluciones especializadas para marcas, artistas y profesionales de
+            la industria audiovisual.
           </p>
         </div>
-      </section>
 
-      <section className="service service-corp" id="corp">
-        <div className="service-image" aria-hidden="true" />
-        <div className="service-content">
-          <span className="number">01</span>
-          <p className="section-label">RAZEN CORP</p>
-          <h2>Precisión técnica para eventos que representan grandes marcas.</h2>
-          <p>
-            Diseñamos, implementamos y operamos la producción técnica completa
-            para lanzamientos, congresos y eventos corporativos.
-          </p>
-          <ul>
-            <li>Visita técnica y levantamiento</li>
-            <li>Diseño, renders y planificación</li>
-            <li>Audio, iluminación, video y pantallas LED</li>
-            <li>Montaje, operación y desmontaje</li>
-          </ul>
-          <a href="#contacto">Conversemos sobre tu evento <Arrow /></a>
-        </div>
-      </section>
+        <div className="business-grid">
+          <a className="business-card business-corp" href="/corp" id="corp">
+            <img src="/business-corp.webp" alt="Producción técnica de un evento corporativo" />
+            <span className="business-shade" />
+            <span className="business-top"><small>01</small><small>Producción integral</small></span>
+            <span className="business-copy">
+              <strong>RAZEN CORP</strong>
+              <small>Eventos de marca, lanzamientos y congresos.</small>
+              <span>Descubrir <Arrow /></span>
+            </span>
+          </a>
 
-      <section className="service service-stage" id="stage">
-        <div className="service-content">
-          <span className="number">02</span>
-          <p className="section-label">RAZEN STAGE</p>
-          <h2>Built to perform.<br />Ready to tour.</h2>
-          <p>
-            Audio, iluminación y sistemas técnicos preparados para artistas,
-            bandas, conciertos y giras dentro y fuera de Chile.
-          </p>
-          <ul>
-            <li>Consolas, monitoreo e inalámbricos</li>
-            <li>Iluminación, control y programación</li>
-            <li>Racks, cases y sistemas personalizados</li>
-            <li>Touring, videoclips y live sessions</li>
-          </ul>
-          <a href="#contacto">Prepara tu próximo show <Arrow /></a>
-        </div>
-        <div className="service-image" aria-hidden="true" />
-      </section>
+          <a className="business-card business-stage" href="/stage" id="stage">
+            <img src="/business-stage.webp" alt="Operación de audio e iluminación para escenario" />
+            <span className="business-shade" />
+            <span className="business-top"><small>02</small><small>Artists &amp; touring</small></span>
+            <span className="business-copy">
+              <strong>RAZEN STAGE</strong>
+              <small>Audio, iluminación y sistemas listos para girar.</small>
+              <span>Descubrir <Arrow /></span>
+            </span>
+          </a>
 
-      <section className="service service-rental" id="rental">
-        <div className="service-image" aria-hidden="true" />
-        <div className="service-content">
-          <span className="number">03</span>
-          <p className="section-label">RAZEN RENTAL</p>
-          <h2>Un partner de rental. Nunca un competidor.</h2>
-          <p>
-            Cross-rental B2B para productoras y profesionales audiovisuales.
-            Equipos revisados, preparados y listos para integrarse a tu producción.
-          </p>
-          <ul>
-            <li>Audio e iluminación profesional</li>
-            <li>Video, LED y procesamiento</li>
-            <li>Intercom, señal y distribución</li>
-            <li>Preparación, despacho y soporte técnico</li>
-          </ul>
-          <a href="#contacto">Solicitar equipamiento <Arrow /></a>
+          <a className="business-card business-rental" href="/rental" id="rental">
+            <img src="/business-rental.webp" alt="Bodega de rental audiovisual profesional" />
+            <span className="business-shade" />
+            <span className="business-top"><small>03</small><small>Cross-rental B2B</small></span>
+            <span className="business-copy">
+              <strong>RAZEN RENTAL</strong>
+              <small>Equipamiento preparado para la industria.</small>
+              <span>Descubrir <Arrow /></span>
+            </span>
+          </a>
         </div>
       </section>
 

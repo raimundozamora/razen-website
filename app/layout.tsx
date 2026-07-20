@@ -16,10 +16,6 @@ export const metadata: Metadata = {
   title: "RAZEN | Tecnología audiovisual",
   description:
     "Producción técnica, touring y rental audiovisual profesional en Chile.",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
 };
 
 export default function RootLayout({
