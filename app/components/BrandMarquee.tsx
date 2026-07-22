@@ -59,11 +59,6 @@ export default function BrandMarquee() {
       className="brand-marquee"
       aria-label="Marcas que han confiado en Razen"
       tabIndex={0}
-      onMouseEnter={() => { pausedRef.current = true; }}
-      onMouseLeave={() => {
-        pausedRef.current = false;
-        dragRef.current.active = false;
-      }}
       onPointerDown={(event) => {
         pausedRef.current = true;
         if (event.pointerType !== "mouse") return;
@@ -81,14 +76,14 @@ export default function BrandMarquee() {
       }}
       onPointerUp={(event) => {
         dragRef.current.active = false;
-        if (event.pointerType !== "mouse") pausedRef.current = false;
+        pausedRef.current = false;
         if (event.currentTarget.hasPointerCapture(event.pointerId)) {
           event.currentTarget.releasePointerCapture(event.pointerId);
         }
       }}
       onPointerCancel={(event) => {
         dragRef.current.active = false;
-        if (event.pointerType !== "mouse") pausedRef.current = false;
+        pausedRef.current = false;
       }}
       onKeyDown={(event) => {
         if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
