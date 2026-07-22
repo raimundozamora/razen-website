@@ -22,7 +22,7 @@ export default function Home() {
             <img src="/razen-logo.svg" alt="RAZEN" />
           </a>
           <nav aria-label="Navegación principal">
-            <a href="/corp">Corp</a>
+            <a href="/corp">Corporate &amp; Brands</a>
             <a href="/stage">Stage</a>
             <a href="/rental">Rental</a>
             <a href="#proyectos">Proyectos</a>
@@ -54,7 +54,7 @@ export default function Home() {
             <span className="business-shade" />
             <span className="business-top"><small>01</small><small>Producción integral</small></span>
             <span className="business-copy">
-              <strong>RAZEN CORP</strong>
+              <strong>CORPORATE &amp; BRANDS</strong>
               <small>Eventos de marca, lanzamientos y congresos.</small>
               <span>Descubrir <Arrow /></span>
             </span>
@@ -65,7 +65,7 @@ export default function Home() {
             <span className="business-shade" />
             <span className="business-top"><small>02</small><small>Artists &amp; touring</small></span>
             <span className="business-copy">
-              <strong>RAZEN STAGE</strong>
+              <strong>STAGE</strong>
               <small>Audio, iluminación y sistemas listos para girar.</small>
               <span>Descubrir <Arrow /></span>
             </span>
@@ -76,7 +76,7 @@ export default function Home() {
             <span className="business-shade" />
             <span className="business-top"><small>03</small><small>Cross-rental B2B</small></span>
             <span className="business-copy">
-              <strong>RAZEN RENTAL</strong>
+              <strong>RENTAL</strong>
               <small>Equipamiento preparado para la industria.</small>
               <span>Descubrir <Arrow /></span>
             </span>
@@ -90,7 +90,7 @@ export default function Home() {
           <h2>La técnica detrás<br />del resultado.</h2>
         </div>
         <div className="project-grid">
-          <article className="project-card project-one"><span>Corporate</span><h3>Lanzamientos y congresos</h3></article>
+          <article className="project-card project-one"><span>Corporate &amp; Brands</span><h3>Lanzamientos y congresos</h3></article>
           <article className="project-card project-two"><span>Stage</span><h3>Shows, artistas y touring</h3></article>
           <article className="project-card project-three"><span>Rental</span><h3>Equipamiento para la industria</h3></article>
         </div>

@@ -23,7 +23,7 @@ export default function DivisionPage(props: DivisionPageProps) {
             <img src="/razen-logo.svg" alt="RAZEN" />
           </a>
           <nav aria-label="Navegación principal">
-            <a href="/corp">Corp</a>
+            <a href="/corp">Corporate &amp; Brands</a>
             <a href="/stage">Stage</a>
             <a href="/rental">Rental</a>
             <a href="/#proyectos">Proyectos</a>

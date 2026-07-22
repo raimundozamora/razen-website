@@ -3,7 +3,7 @@ import DivisionPage from "../components/DivisionPage";
 export default function CorpPage() {
   return <DivisionPage
     number="01"
-    name="RAZEN CORP"
+    name="CORPORATE & BRANDS"
     eyebrow="Technical production"
     headline="Precisión técnica para eventos que representan grandes marcas."
     intro="Planificamos y ejecutamos la producción técnica completa de lanzamientos, congresos y encuentros corporativos. Un solo equipo coordina cada etapa, desde el levantamiento inicial hasta el desmontaje."

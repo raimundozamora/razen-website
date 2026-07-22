@@ -3,7 +3,7 @@ import DivisionPage from "../components/DivisionPage";
 export default function StagePage() {
   return <DivisionPage
     number="02"
-    name="RAZEN STAGE"
+    name="STAGE"
     eyebrow="Artists & touring"
     headline="Built to perform. Ready to tour."
     intro="Preparamos sistemas de audio e iluminación para bandas y artistas que necesitan consistencia dentro y fuera de Chile. Soluciones pensadas para viajar, instalarse rápido y responder show tras show."

@@ -3,7 +3,7 @@ import DivisionPage from "../components/DivisionPage";
 export default function RentalPage() {
   return <DivisionPage
     number="03"
-    name="RAZEN RENTAL"
+    name="RENTAL"
     eyebrow="Cross-rental B2B"
     headline="Un partner de rental. Nunca un competidor."
     intro="Equipamiento audiovisual profesional para productoras, proveedores y técnicos. Nosotros revisamos, preparamos y despachamos; tu equipo se encarga del montaje y la operación."
