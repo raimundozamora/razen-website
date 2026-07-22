@@ -1,15 +1,6 @@
-const Arrow = () => <span aria-hidden="true" className="arrow">→</span>;
+import BrandMarquee from "./components/BrandMarquee";
 
-const clientBrands = [
-  "CLIENTE 01",
-  "CLIENTE 02",
-  "CLIENTE 03",
-  "CLIENTE 04",
-  "CLIENTE 05",
-  "CLIENTE 06",
-  "CLIENTE 07",
-  "CLIENTE 08",
-];
+const Arrow = () => <span aria-hidden="true" className="arrow">→</span>;
 
 export default function Home() {
   return (
@@ -59,17 +50,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="client-strip" aria-label="Marcas que han confiado en Razen">
-          <p>Marcas que han<br />confiado en nosotros</p>
-          <div className="brand-marquee">
-            <div className="brand-track">
-              {[...clientBrands, ...clientBrands].map((brand, index) => (
-                <span key={`${brand}-${index}`} aria-hidden={index >= clientBrands.length}>
-                  {brand}
-                </span>
-              ))}
-            </div>
-          </div>
+        <div className="client-strip">
+          <BrandMarquee />
         </div>
 
         <div className="business-grid">
